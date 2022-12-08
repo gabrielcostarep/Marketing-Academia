@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    height: 250px;
+}
+
+#logo img {
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav span {
+    color: #7b1b1d;
+    font-family: "Raleway", sans-serif;
+    font-size: 27px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.7s;
+}
+
+nav span:hover {
+    background-color: #7b1b1d;
+    color: white;
+}
+
+.mainHome {
+    margin-left: 10%;
+    max-width: 550px;
+    animation: moveContent 2s 0.5s backwards;
+}
+
+#content h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: min(80px, 15vw);
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #7b1b1d;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#content p {
+    font-family: "Raleway", sans-serif;
+    font-size: min(55px, 10vw);
+    color: white;
+}
+
+.mainPlans {
+    margin-top: 40px;
+    animation: movePlans 2s;
+}
+
+#plans {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.modelBox {
+    width: 300px;
+    margin: 20px;
+    padding: 25px;
+    background-color: rgba(121, 27, 29, 0.9);
+}
+
+.modelBox h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: min(35px, 7vw);
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(47, 9, 9, 0.7);
+    margin: 40px 0;
+}
+
+.modelBox p {
+    font-family: "Raleway", sans-serif;
+    font-size: min(28px, 7vw);
+    margin-bottom: 10px;
+}
+
+.modelBox a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(69, 13, 14, 0.9);
+    font-family: "Oswald", sans-serif;
+    font-size: min(25px, 7vw);
+    text-transform: uppercase;
+    color: white;
+    margin-top: 50px;
+    transition-property: background-color, text-shadow;
+    transition-duration: 0.3s;
+}
+
+.modelBox a:hover {
+    background-color: rgba(47, 9, 9, 0.9);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+}
+
+.mainContact {
+    animation: moveContact 2s;
+    margin-top: 40px;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.form {
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+}
+
+.form h1,
+.location h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: min(35px, 8vw);
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+form input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 70px;
+    width: 70%;
+    background-color: rgba(69, 13, 14, 0.9);
+    font-size: min(25px, 7vw);
+    color: white;
+    cursor: pointer;
+    transition-property: background-color, text-shadow;
+    transition-duration: 0.3s;
+}
+
+form textarea {
+    width: 100%;
+    padding: 20px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+form input:hover,
+form textarea:hover {
+    outline: 1px solid rgba(105, 18, 19, 0.9);
+}
+
+form input:focus,
+form textarea:focus {
+    border: 0;
+    outline: 1px solid rgba(105, 18, 19, 0.9);
+}
+
+form input[type="submit"]:hover {
+    outline: 0;
+    background-color: rgba(47, 9, 9, 0.9);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+}
+
+.location {
+    margin: 10px 40px;
+}
+
+#gps {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-bottom: 50%;
+}
+
+#gps iframe {
+    position: absolute;
+    width: 130%;
+    height: 230%;
+}
+
+#social {
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+#social img {
+    width: 50px;
+    margin: 0 10px;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+#social img:hover {
+    opacity: 0.6;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 680px) {
+    nav {
+        display: grid;
+        grid-template: auto auto auto / auto;
+        margin: 0;
+    }
+
+    nav span {
+        font-size: 20px;
+    }
+
+    .modelBox h1 {
+        margin: 10px 0 25px 0;
+    }
+
+    .mainHome {
+        margin: 0;
+        animation: none;
+    }
+
+    .mainPlans {
+        animation: none;
+    }
+
+    .mainContact {
+        animation: none;
+    }
+}
+
+@keyframes moveContent {
+    from {
+        margin-left: -500px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 10%;
+        opacity: 1;
+    }
+}
+
+@keyframes movePlans {
+    from {
+        margin-left: -10000px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 10;
+        opacity: 1;
+    }
+}
+
+@keyframes moveContact {
+    from {
+        margin-left: -10000px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 10;
+        opacity: 1;
+    }
+}
