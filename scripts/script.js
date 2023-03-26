@@ -1,15 +1,6 @@
 const main = document.getElementsByTagName('main')[0];
 
-document.addEventListener('load', (e) => {
-  const el = e.target;
-  const href = el.getAttribute('href');
-
-  fetch('home.html')
-    .then((pagina) => pagina.text())
-    .then((paginaHTML) => loadPage(paginaHTML, href));
-});
-
-document.addEventListener('click', (e) => {
+document.addEventListener('click', e => {
   const el = e.target;
   const tag = el.tagName.toLowerCase();
 
